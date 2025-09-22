@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useState } from "react";
-import Logo from "./Logo";
+import Logo from "./logo";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Navbar = ({ menuItems }) => {
+const Header = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id) => {
@@ -99,4 +101,4 @@ const Navbar = ({ menuItems }) => {
   );
 };
 
-export default Navbar;
+export default Header;
