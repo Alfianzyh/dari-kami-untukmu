@@ -24,9 +24,8 @@ const Header = ({ menuItems }) => {
         {/* Logo */}
         <div
           onClick={() => scrollToSection("hero")}
-          className="cursor-pointer font-semibold text-lg text-black"
-        >
-          DariKamiUntukmu
+          className="cursor-pointer font-semibold text-lg text-black">
+            <Logo size={60} textSize="text-2xl" />
         </div>
 
         {/* Desktop Menu */}
@@ -35,7 +34,7 @@ const Header = ({ menuItems }) => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-gray-800 text-[15px] font-medium hover:text-black transition"
+              className="text-gray-800 text-base font-semibold hover:text-black transition cursor-pointer"
             >
               {item.label}
             </button>
@@ -44,10 +43,10 @@ const Header = ({ menuItems }) => {
 
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-3">
-          <button className="px-4 py-1.5 bg-gray-200 text-black rounded-full text-sm font-medium hover:bg-gray-300 transition">
+          <button className="px-5 py-2 bg-gradient-to-r from-black to-black text-white rounded-full text-sm font-semibold shadow-lg hover:scale-105 hover:from-white hover:to-white hover:text-black transition-all duration-200 cursor-pointer">
             Masuk
           </button>
-          <button className="px-4 py-1.5 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition">
+          <button className="px-5 py-2 bg-white text-black border-2 border-black rounded-full text-sm font-semibold shadow-md hover:bg-white hover:scale-105 transition-all duration-200 cursor-pointer">
             Daftar
           </button>
         </div>
@@ -87,10 +86,10 @@ const Header = ({ menuItems }) => {
 
             {/* Auth Buttons in mobile */}
             <div className="flex flex-col space-y-2 pt-4">
-              <button className="w-full h-[35px] flex items-center justify-center bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-300 transition">
+              <button className="w-full h-[38px] flex items-center justify-center bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-full text-sm font-semibold shadow-md hover:scale-105 hover:from-amber-600 hover:to-red-700 transition-all duration-200 cursor-pointer">
                 Masuk
               </button>
-              <button className="w-full h-[35px] flex items-center justify-center bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition">
+              <button className="w-full h-[38px] flex items-center justify-center bg-white text-red-700 border-2 border-red-600 rounded-full text-sm font-semibold shadow-md hover:bg-red-50 hover:scale-105 transition-all duration-200 cursor-pointer">
                 Daftar
               </button>
             </div>

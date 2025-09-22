@@ -1,17 +1,18 @@
 import Header from "@/components/header";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div className=" border-gray-200 font-Poppins">
       <Header
         menuItems={[
-          { id: "featuressection", label: "Features" },
-          { id: "discover", label: "Discover" },
-          { id: "pricing", label: "Pricing" },
-          { id: "download", label: "Download" },
+          { id: "template", label: "Template" },
+          { id: "harga", label: "Harga" },
+          { id: "tentang", label: "Tentang" },
+          { id: "kotnak", label: "Kontak" },
         ]}
       />     
-      <main className="pt-20"></main>
+      <Hero />
     </div>
   );
 }
