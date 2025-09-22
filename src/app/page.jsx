@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Features from "@/components/features";
+import Templates from "@/components/templates";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       />     
       <Hero />
       <Features />
+      <Templates />
     </div>
   );
 }
