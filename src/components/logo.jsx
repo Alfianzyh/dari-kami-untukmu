@@ -2,7 +2,7 @@ const Logo = ({ size = 5, textSize = "text-2xl" }) => {
   return (
     <div className="flex items-center space-x-3">
       <img
-        src="/logo.png" // file logo.png di folder public
+        src="/logo.png" 
         alt="Logo"
         className="w-[60px] h-[50px] -ml-3"
       />

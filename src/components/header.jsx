@@ -21,7 +21,6 @@ const Header = ({ menuItems }) => {
   return (
     <header className="w-full px-6 py-4 fixed top-0 left-0 z-50 bg-white shadow">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo */}
         <div
           onClick={() => scrollToSection("hero")}
           className="cursor-pointer font-semibold text-lg text-black">
@@ -40,8 +39,6 @@ const Header = ({ menuItems }) => {
             </button>
           ))}
         </nav>
-
-        {/* Buttons */}
         <div className="hidden md:flex items-center space-x-3">
           <button className="px-5 py-2 bg-gradient-to-r from-black to-black text-white rounded-full text-sm font-semibold shadow-lg hover:scale-105 hover:from-white hover:to-white hover:text-black transition-all duration-200 cursor-pointer">
             Masuk
@@ -83,8 +80,6 @@ const Header = ({ menuItems }) => {
                 {item.label}
               </button>
             ))}
-
-            {/* Auth Buttons in mobile */}
             <div className="flex flex-col space-y-2 pt-4">
               <button className="w-full h-[38px] flex items-center justify-center bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-full text-sm font-semibold shadow-md hover:scale-105 hover:from-amber-600 hover:to-red-700 transition-all duration-200 cursor-pointer">
                 Masuk
