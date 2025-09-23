@@ -5,6 +5,7 @@ import Templates from "@/components/templates";
 import Pricing from "@/components/pricing";
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Pricing />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
