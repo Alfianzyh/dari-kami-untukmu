@@ -4,16 +4,17 @@ import Features from "@/components/features";
 import Templates from "@/components/templates";
 import Pricing from "@/components/pricing";
 import About from "@/components/about";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
     <div className=" border-gray-200 font-Poppins">
       <Header
         menuItems={[
-          { id: "template", label: "Template" },
-          { id: "harga", label: "Harga" },
-          { id: "tentang", label: "Tentang" },
-          { id: "kotnak", label: "Kontak" },
+          { id: "templates", label: "Template" },
+          { id: "pricing", label: "Harga" },
+          { id: "about", label: "Tentang" },
+          { id: "contact", label: "Kontak" },
         ]}
       />     
       <Hero />
@@ -21,6 +22,7 @@ export default function Home() {
       <Templates />
       <Pricing />
       <About />
+      <Contact />
     </div>
   );
 }

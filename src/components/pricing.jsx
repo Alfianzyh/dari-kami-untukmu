@@ -38,7 +38,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="py-16 bg-gray-200" id="pricing font-Poppins">
+    <section className="py-16 bg-gray-200 font-Poppins" id="pricing">
         <div className="max-w-6xl mx-auto px-6 text-center mb-7">
             <h2 className="text-4xl font-bold mb-12">Paket Harga</h2>
             <div className="grid gap-8 md:grid-cols-3">
@@ -61,7 +61,7 @@ export default function Pricing() {
                     <p className="text-sm font-bold text-black mb-6">{p.note}</p>
                 </div>
 
-                <button className="w-full md:w-[160px] px-6 py-3 bg-gray-200 text-black rounded-full text-md font-bold hover:bg-gray-300 transition text-center">
+                <button className="w-full md:w-[160px] px-6 py-3 bg-gray-200 text-black rounded-full text-md font-bold hover:bg-gray-300 transition text-center cursor-pointer">
                     Pilih Paket
                 </button>
                 </div>

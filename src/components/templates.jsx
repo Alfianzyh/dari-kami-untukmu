@@ -36,10 +36,10 @@ export default function Templates() {
                 {t.id} - {t.name}
               </h3>
               <div className="mt-6 flex flex-col gap-3 w-full">
-                <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-base font-semibold font-poppins hover:bg-gray-300 transition">
+                <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-full text-base font-semibold font-poppins hover:bg-gray-300 transition cursor-pointer">
                   Lihat Template
                 </button>
-                <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-base font-semibold font-poppins hover:bg-black transition">
+                <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-base font-semibold font-poppins hover:bg-black transition cursor-pointer">
                   Pesan Sekarang
                 </button>
               </div>
