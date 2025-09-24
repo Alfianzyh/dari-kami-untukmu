@@ -1,30 +1,57 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section className="relative w-full h-[911px] flex items-center" id="hero">
+    <section
+      className="relative w-full h-[911px] flex items-center"
+      id="hero"
+    >
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: "url('/bg-image.png')", 
+          backgroundImage: "url('/bg-image.png')",
         }}
       />
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/50" />
+      
       <div className="relative z-10 max-w-3xl px-6 lg:px-0 lg:ml-96 text-white">
-        <h1 className="text-3xl lg:text-6xl font-semibold leading-normal text-left">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-3xl lg:text-6xl font-semibold leading-normal text-left bg-gradient-to-r from-pink-500 to-amber-400 text-transparent bg-clip-text"
+        >
           Bukan sekadar undangan, tapi cara merayakan cinta dengan penuh makna.
-        </h1>
-        <p className="mt-6 text-sm italic lg:text-base text-gray-200 max-w-xl text-left">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          className="mt-6 text-sm lg:text-base text-gray-200 max-w-xl text-left"
+        >
           Lewat undangan digital dari{" "}
-          <span className="font-semibold">DariKamiUntukmu</span>, momen spesialmu
-          bisa dibagikan dengan cara yang lebih hangat, modern, dan penuh makna.
-        </p>
-        <div className="mt-10 flex gap-4">
-          <button className="px-6 py-3 bg-gradient-to-r from-black to-black text-white rounded-full font-semibold shadow-lg hover:scale-105 hover:from-white hover:to-white hover:text-black transition-all duration-200 cursor-pointer">
+          <span className="italic font-semibold bg-gradient-to-r from-pink-500 to-amber-400 text-transparent bg-clip-text">
+            DariKamiUntukmu
+          </span>
+          , momen spesialmu bisa dibagikan dengan cara yang lebih hangat,
+          modern, dan penuh makna.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+          className="mt-10 flex gap-4"
+        >
+          <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-amber-400 text-white rounded-full font-semibold shadow-lg hover:scale-105 hover:from-white hover:to-white hover:text-pink-500 transition-all duration-200 cursor-pointer">
             Buat Undangan
           </button>
-          <button className="px-6 py-3 bg-white text-black border-2 border-black rounded-full font-semibold shadow-lg hover:bg-white hover:scale-105 transition-all duration-200 cursor-pointer">
+          <button className="px-6 py-3 bg-white text-pink-500 border-2 border-pink-500 rounded-full font-semibold shadow-lg hover:bg-white hover:scale-105 transition-all duration-200 cursor-pointer">
             Coba Gratis
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
