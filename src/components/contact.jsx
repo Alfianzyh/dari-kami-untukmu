@@ -1,32 +1,62 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
-    <section className="py-16 bg-gray-200" id="contact">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6">Kontak Kami</h2>
-        <p className="text-black mb-6">
-          Punya pertanyaan, atau siap buat undangan digital impianmu? Kami selalu
-          senang mendengar cerita cintamu.
-        </p>
-        <form className="grid gap-4 text-left max-w-xl mx-auto">
+    <section className="py-20 bg-gradient-to-b from-pink-50 to-amber-50" id="contact">
+      <div className="max-w-4xl mx-auto px-6 text-center font-poppins">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-pink-500 to-amber-500 text-transparent bg-clip-text"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          Kontak Kami
+        </motion.h2>
+
+        <motion.p
+          className="text-black mb-10 font-medium max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Punya pertanyaan, atau siap buat undangan digital impianmu?  
+          <br />Kami selalu senang mendengar cerita cintamu.
+        </motion.p>
+
+        <motion.form
+          className="grid gap-4 text-left max-w-xl mx-auto"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
           <input
             type="text"
             placeholder="Nama"
-            className="border p-3 rounded-lg bg-white"
+            className="border border-pink-500 p-3 rounded-xl bg-white focus:ring-2 focus:ring-amber-400 outline-none transition font-medium"
           />
           <input
             type="email"
             placeholder="Email"
-            className="border p-3 rounded-lg bg-white"
+            className="border border-pink-500 p-3 rounded-xl bg-white focus:ring-2 focus:ring-amber-400 outline-none transition font-medium"
           />
           <textarea
             placeholder="Pesan"
-            className="border p-3 rounded-lg bg-white"
             rows="4"
+            className="border border-pink-500 p-3 rounded-xl bg-white focus:ring-2 focus:ring-amber-400 outline-none transition font-medium"
           ></textarea>
-          <button className="px-6 py-2 bg-black text-white rounded-full cursor-pointer hover:bg-gray-700 transition">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-3 bg-gradient-to-r from-pink-500 to-amber-400 text-white rounded-full font-semibold shadow-md cursor-pointer hover:opacity-90 transition"
+          >
             Kirim
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
     </section>
   );
