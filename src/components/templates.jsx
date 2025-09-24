@@ -22,7 +22,7 @@ export default function Templates() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-pink-50 to-amber-50" id="templates">
+    <section className="py-20 bg-gradient-to-b from-amber-50 to-pink-50" id="templates">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
