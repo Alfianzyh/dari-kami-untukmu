@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full h-[911px] flex items-center">
+    <section className="relative w-full h-[911px] flex items-center" id="hero">
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{
