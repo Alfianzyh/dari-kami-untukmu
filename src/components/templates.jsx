@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Templates() {
   const templates = [
@@ -53,9 +54,9 @@ export default function Templates() {
                 {t.id} - {t.name}
               </h3>
               <div className="mt-6 flex flex-col gap-3 w-full">
-                <button className="px-4 py-2 bg-amber-500 text-white rounded-full text-base font-semibold font-poppins hover:bg-pink-500 hover:text-white transition cursor-pointer">
+                <Link href="/preview-undangan" className="inline-block px-4 py-2 bg-amber-500 text-white rounded-full text-base font-semibold font-poppins hover:bg-pink-500 hover:text-white transition cursor-pointer">
                   Lihat Template
-                </button>
+                </Link>
                 <button className="px-4 py-2 bg-gradient-to-r from-pink-500 to-amber-500 text-white rounded-full text-base font-semibold font-poppins shadow-md hover:scale-105 hover:from-pink-600 hover:to-amber-600 transition-all duration-200 cursor-pointer">
                   Pesan Sekarang
                 </button>
